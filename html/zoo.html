@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Zoo - Hewan Darat</title>
+    <link rel="stylesheet" href="../style/zoo.css">
+    <!-- untuk menghubungkan css yang berbeda folder -->
+</head>
+<body data-category="zoo">
+
+    <!-- sebagai pembungkus nav -->
+    <header>
+        <h1>PUSAT INFORMASI ZOO</h1>
+        <nav class="nav-tabs">
+            <a href="../index.html" class="nav-btn">Beranda</a>
+            <a href="zoo.html" class="nav-btn active-zoo">Zoo</a>
+            <a href="aquarium.html" class="nav-btn">Aquarium</a>
+        </nav>
+    </header>
+    <form id="search-form" class="search-container">
+        <input type="text" id="search-input" class="search-input" placeholder="Ketik nama hewan darat...">
+        <button type="submit" class="search-btn">Cari</button>
+    </form>
+    <main class="container">
+        <div class="flex-container" id="animal-container"></div>
+    </main>
+
+    <!-- untuk membuat Tombol Halaman (Pagination) yang berguna jika jumlah hewan sangat banyak -->
+    <div class="pagination-container">
+        <button id="prev-btn" class="page-btn">Sebelumnya</button>
+        <span id="page-info" class="page-info">Halaman 1</span>
+        <button id="next-btn" class="page-btn">Selanjutnya</button>
+    </div>
+
+
+    <!-- Modal Halaman Artikel -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-content" id="modal-content">
+            <button class="modal-close" id="modal-close-btn">✕</button>
+            <h2 class="modal-title" id="modal-title"></h2>
+            <img src="" alt="" class="modal-img" id="modal-img">
+            <div class="modal-info-list">
+                <p><strong>ID:</strong> <span id="modal-id"></span> | <strong>Kategori:</strong> <span id="modal-category"></span> | <strong>Spesies:</strong> <span id="modal-species"></span></p>
+            </div>
+            <p class="modal-desc" id="modal-desc"></p>
+            <div class="fact-box">
+                <strong> Fakta Menarik:</strong>
+                <p id="modal-fact" class="fact-text"></p>
+                <img src="" alt="" class="fact-img" id="modal-fact-img">
+            </div>
+        </div>
+    </div>
+    <!-- bagian footer kaki dari program berisi untuk menyatakan informasi dari web ini -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <h3>Tentang Website Ini</h3>
+            <p>Pusat Informasi Edukasi Satwa adalah ensiklopedia digital interaktif yang didedikasikan untuk memberikan informasi komprehensif mengenai kehidupan satwa liar. Mulai dari daratan sabana hingga palung samudra terdalam, mari kenali dan lestarikan keanekaragaman hayati bersama!</p>
+            <p class="copyright">&copy; 2026 Zoo & Aquarium Edukasi. Dibuat untuk tujuan pembelajaran.</p>
+        </div>
+    </footer>
+    <script src="../javascript/zooaquarium.js"></script>
+    <!-- untuk menghbungkan javascript yang berbeda folder -->
+</body>
+</html>
