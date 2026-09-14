@@ -21,6 +21,6 @@
 
 ## 🚀 Cara Menjalankan Proyek
 
-1. Clone repositori ini atau download sebagai ZIP.
+1. 1. Clone repositori ini: `git clone https://github.com/pasha-harahap/projekan-pelatihan-web.git`
 2. Buka folder proyek menggunakan **Visual Studio Code**.
 3. Jalankan file `index.html` menggunakan browser atau ekstensi **Live Server** di VS Code agar *Fetch API* data JSON lokal dapat berjalan dengan sempurna.
